@@ -48,11 +48,112 @@ table {
 html {
   font-size: 62.5%; }
 
-#sec1 {
-  width: 100%; }
+body {
+  color: #fff; }
 
-#sec2 {
-  width: 100%; }
+#sec1-main-cont {
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  background-image: url("../images/whitetiger1.png");
+  background-size: cover;
+  background-position: top right; }
+  #sec1-main-cont nav {
+    width: 100%;
+    height: 6rem;
+    background-color: #161616;
+    position: fixed; }
+    #sec1-main-cont nav #nav-logo {
+      margin: 0;
+      padding: 0;
+      height: 6rem;
+      position: absolute;
+      left: 9rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row; }
+      #sec1-main-cont nav #nav-logo .fa-envira {
+        font-size: 2rem;
+        color: #f9d423;
+        transition: 0.3s;
+        margin-right: 0.5rem;
+        transition: 0.7s;
+        -moz-transition: 0.7s; }
+      #sec1-main-cont nav #nav-logo p {
+        padding: 0;
+        margin: auto;
+        font-family: "Nunito", sans-serif;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.8rem; }
+      #sec1-main-cont nav #nav-logo:hover {
+        cursor: pointer; }
+        #sec1-main-cont nav #nav-logo:hover .fa-envira {
+          color: #1cd8d2;
+          transition: 0.7s;
+          -moz-transition: 0.7s; }
+    #sec1-main-cont nav #main-ul {
+      margin: 0;
+      padding: 0;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      list-style-type: none;
+      position: absolute;
+      right: 6rem; }
+      #sec1-main-cont nav #main-ul #link1 {
+        background: linear-gradient(right, #e65c00, #f9d423);
+        background: -moz-linear-gradient(right, #e65c00, #f9d423); }
+      #sec1-main-cont nav #main-ul #link2 {
+        background: linear-gradient(right, #da22ff, #9733ee);
+        background: -moz-linear-gradient(right, #da22ff, #9733ee); }
+      #sec1-main-cont nav #main-ul #link3 {
+        background: linear-gradient(right, #1cd8d2, #93edc7);
+        background: -moz-linear-gradient(right, #1cd8d2, #93edc7); }
+      #sec1-main-cont nav #main-ul #link4 {
+        background: linear-gradient(right, #ff512f, #dd2476);
+        background: -moz-linear-gradient(right, #ff512f, #dd2476); }
+      #sec1-main-cont nav #main-ul #link5 {
+        background: linear-gradient(right, #1d976c, #93f9b9);
+        background: -moz-linear-gradient(right, #1d976c, #93f9b9); }
+      #sec1-main-cont nav #main-ul li {
+        margin: 0;
+        padding: 0;
+        height: 6rem;
+        transition: all 0.7s linear;
+        position: relative;
+        z-index: 10; }
+        #sec1-main-cont nav #main-ul li a {
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          margin: 0;
+          padding: 0 3rem 0 3rem;
+          height: 6rem;
+          display: flex;
+          width: 100%;
+          box-sizing: border-box;
+          transition: 0.7s;
+          background-color: #161616;
+          position: relative;
+          z-index: 20; }
+          #sec1-main-cont nav #main-ul li a p {
+            padding: 0;
+            margin: auto;
+            font-family: "Nunito", sans-serif;
+            font-weight: 200;
+            text-transform: uppercase;
+            font-size: 1.6rem; }
+          #sec1-main-cont nav #main-ul li a:hover {
+            background-color: rgba(18, 18, 18, 0); }
+            #sec1-main-cont nav #main-ul li a:hover p {
+              color: #fff; }
+
+#sec2-about {
+  width: 100%;
+  background-color: #fff;
+  min-height: 20rem; }
 
 #sec3 {
   width: 100%; }

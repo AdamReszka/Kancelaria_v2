@@ -21,6 +21,7 @@
 @mixin clearA {
 	text-decoration: none;
 	outline: none;
+	color: #fff;
 }
 @mixin dircol {
 	display: flex;

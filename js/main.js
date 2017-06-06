@@ -2,9 +2,9 @@ $(document).ready(initAll);
 
 function initAll(){
   setHeight();
-  
+
 }
 
 function setHeight(){
-  $('#nazwa-kontenera').height($(window).innerHeight());
+  $('#sec1-main-cont').height($(window).innerHeight());
 }
