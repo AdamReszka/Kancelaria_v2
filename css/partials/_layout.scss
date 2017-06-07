@@ -34,6 +34,15 @@ body{
   background: -moz-linear-gradient(right,#ff4e50,#f9d423);
   background: -webkit-linear-gradient(right,#ff4e50,#f9d423);
 }
+nav#main-nav.nav-darken{
+  background-color: rgba(0, 0, 0, 1);
+}
+nav#main-nav ul#main-ul li a.nav-darken{
+  background-color: rgba(0, 0, 0, 1);
+}
+nav#main-nav ul#main-ul li a.nav-darken:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
 #sec1-main-cont{
   width: 100%;
   background-color: #000;
@@ -46,6 +55,7 @@ body{
     background-color: rgba(22, 22, 22, 1);
     position: fixed;
     z-index: 500;
+    transition: 0.7s;
     #nav-logo{
       @include zero;
       height: $nav;
@@ -143,6 +153,7 @@ body{
         font-weight: 300;
         text-align: left;
         position: relative;
+        margin-top: 5rem;
       }
       .mini-box{
         .sub-title{
@@ -311,6 +322,16 @@ body{
   }
 }
 
-#sec3{
+#sec3-description{
   width: 100%;
+  min-height: 74rem;
+  background-color: #000;
+  background-image: url('../images/warsaw-bg3.png');
+  background-size: cover;
+}
+
+#sec4-team{
+  width: 100%;
+  min-height: 50rem;
+  background-color: rgba(22, 22, 22, 1);
 }

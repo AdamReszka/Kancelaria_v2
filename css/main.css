@@ -81,6 +81,15 @@ body {
   background: -moz-linear-gradient(right, #ff4e50, #f9d423);
   background: -webkit-linear-gradient(right, #ff4e50, #f9d423); }
 
+nav#main-nav.nav-darken {
+  background-color: black; }
+
+nav#main-nav ul#main-ul li a.nav-darken {
+  background-color: black; }
+
+nav#main-nav ul#main-ul li a.nav-darken:hover {
+  background-color: transparent; }
+
 #sec1-main-cont {
   width: 100%;
   background-color: #000;
@@ -92,7 +101,8 @@ body {
     height: 6rem;
     background-color: #161616;
     position: fixed;
-    z-index: 500; }
+    z-index: 500;
+    transition: 0.7s; }
     #sec1-main-cont nav #nav-logo {
       margin: 0;
       padding: 0;
@@ -183,7 +193,8 @@ body {
         font-size: 8.4rem;
         font-weight: 300;
         text-align: left;
-        position: relative; }
+        position: relative;
+        margin-top: 5rem; }
       #sec1-main-cont .title-cont .title-box .mini-box .sub-title {
         font-family: "Nunito", sans-serif;
         margin: 4rem 0 4rem 0.4rem;
@@ -331,7 +342,16 @@ body {
         font-size: 1.8rem;
         letter-spacing: 0.4rem; }
 
-#sec3 {
-  width: 100%; }
+#sec3-description {
+  width: 100%;
+  min-height: 74rem;
+  background-color: #000;
+  background-image: url("../images/warsaw-bg3.png");
+  background-size: cover; }
+
+#sec4-team {
+  width: 100%;
+  min-height: 50rem;
+  background-color: #161616; }
 
 /*# sourceMappingURL=main.css.map */
