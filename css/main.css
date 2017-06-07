@@ -51,6 +51,36 @@ html {
 body {
   color: #fff; }
 
+.link1 {
+  background: linear-gradient(right, #e65c00, #f9d423);
+  background: -moz-linear-gradient(right, #e65c00, #f9d423);
+  background: -webkit-linear-gradient(right, #e65c00, #f9d423); }
+
+.link2 {
+  background: linear-gradient(right, #da22ff, #9733ee);
+  background: -moz-linear-gradient(right, #da22ff, #9733ee);
+  background: -webkit-linear-gradient(right, #da22ff, #9733ee); }
+
+.link3 {
+  background: linear-gradient(right, #1cd8d2, #93edc7);
+  background: -moz-linear-gradient(right, #1cd8d2, #93edc7);
+  background: -webkit-linear-gradient(right, #1cd8d2, #93edc7); }
+
+.link4 {
+  background: linear-gradient(right, #ff512f, #dd2476);
+  background: -moz-linear-gradient(right, #ff512f, #dd2476);
+  background: -webkit-linear-gradient(right, #ff512f, #dd2476); }
+
+.link5 {
+  background: linear-gradient(right, #1d976c, #93f9b9);
+  background: -moz-linear-gradient(right, #1d976c, #93f9b9);
+  background: -webkit-linear-gradient(right, #1d976c, #93f9b9); }
+
+.link6 {
+  background: linear-gradient(right, #ff4e50, #f9d423);
+  background: -moz-linear-gradient(right, #ff4e50, #f9d423);
+  background: -webkit-linear-gradient(right, #ff4e50, #f9d423); }
+
 #sec1-main-cont {
   width: 100%;
   background-color: #000;
@@ -102,21 +132,6 @@ body {
       list-style-type: none;
       position: absolute;
       right: 6rem; }
-      #sec1-main-cont nav #main-ul #link1 {
-        background: linear-gradient(right, #e65c00, #f9d423);
-        background: -moz-linear-gradient(right, #e65c00, #f9d423); }
-      #sec1-main-cont nav #main-ul #link2 {
-        background: linear-gradient(right, #da22ff, #9733ee);
-        background: -moz-linear-gradient(right, #da22ff, #9733ee); }
-      #sec1-main-cont nav #main-ul #link3 {
-        background: linear-gradient(right, #1cd8d2, #93edc7);
-        background: -moz-linear-gradient(right, #1cd8d2, #93edc7); }
-      #sec1-main-cont nav #main-ul #link4 {
-        background: linear-gradient(right, #ff512f, #dd2476);
-        background: -moz-linear-gradient(right, #ff512f, #dd2476); }
-      #sec1-main-cont nav #main-ul #link5 {
-        background: linear-gradient(right, #1d976c, #93f9b9);
-        background: -moz-linear-gradient(right, #1d976c, #93f9b9); }
       #sec1-main-cont nav #main-ul li {
         margin: 0;
         padding: 0;
@@ -162,7 +177,6 @@ body {
       justify-content: flex-start;
       margin-left: 9rem;
       margin-top: 3rem;
-      height: 50rem;
       position: relative; }
       #sec1-main-cont .title-cont .title-box .main-title {
         font-family: "Hind", sans-serif;
@@ -170,66 +184,152 @@ body {
         font-weight: 300;
         text-align: left;
         position: relative; }
-      #sec1-main-cont .title-cont .title-box .mini-box {
-        position: absolute;
-        bottom: 0; }
-        #sec1-main-cont .title-cont .title-box .mini-box .sub-title {
-          font-family: "Nunito", sans-serif;
-          margin: 2rem 0 4rem 0.4rem;
-          font-size: 2rem;
-          font-weight: 300;
-          width: 50rem;
-          line-height: 2.8rem; }
-        #sec1-main-cont .title-cont .title-box .mini-box .title-link {
-          height: 6rem;
-          width: 30rem;
-          margin: 0 0 2.4rem 0.6rem; }
-          #sec1-main-cont .title-cont .title-box .mini-box .title-link a {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            text-decoration: none;
-            outline: none;
-            color: #fff;
-            width: 100%;
-            height: 100%;
+      #sec1-main-cont .title-cont .title-box .mini-box .sub-title {
+        font-family: "Nunito", sans-serif;
+        margin: 4rem 0 4rem 0.4rem;
+        font-size: 2rem;
+        font-weight: 300;
+        width: 50rem;
+        line-height: 2.8rem; }
+      #sec1-main-cont .title-cont .title-box .mini-box .title-link {
+        height: 6rem;
+        width: 30rem;
+        margin: 0 0 2.4rem 0.6rem; }
+        #sec1-main-cont .title-cont .title-box .mini-box .title-link a {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 50; }
+          #sec1-main-cont .title-cont .title-box .mini-box .title-link a .fa-tag {
+            font-size: 3.8rem;
+            color: #f9d423;
             position: relative;
             z-index: 50; }
-            #sec1-main-cont .title-cont .title-box .mini-box .title-link a .fa-tag {
-              font-size: 3.8rem;
-              color: #f9d423;
-              position: relative;
-              z-index: 50; }
-            #sec1-main-cont .title-cont .title-box .mini-box .title-link a .tickets {
-              position: relative;
-              z-index: 50;
-              font-family: "Nunito", sans-serif;
-              text-transform: uppercase;
-              font-size: 2.2rem;
-              letter-spacing: 0.3rem;
-              margin-left: 1rem; }
-            #sec1-main-cont .title-cont .title-box .mini-box .title-link a .hover-ticket {
-              position: absolute;
-              z-index: 0;
-              height: 6rem;
-              width: 40rem;
-              left: -50rem;
-              top: 0;
-              transition: 0.7s;
-              border-radius: 0.5rem; }
-            #sec1-main-cont .title-cont .title-box .mini-box .title-link a .hover1 {
-              background: linear-gradient(right, #1cd8d2, #93edc7);
-              background: -moz-linear-gradient(right, #1cd8d2, #93edc7); }
-            #sec1-main-cont .title-cont .title-box .mini-box .title-link a .hover2 {
-              background: linear-gradient(right, #ff512f, #dd2476);
-              background: -moz-linear-gradient(right, #ff512f, #dd2476); }
-            #sec1-main-cont .title-cont .title-box .mini-box .title-link a:hover .hover-ticket {
-              left: -10rem; }
+          #sec1-main-cont .title-cont .title-box .mini-box .title-link a .tickets {
+            position: relative;
+            z-index: 50;
+            font-family: "Nunito", sans-serif;
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            letter-spacing: 0.3rem;
+            margin-left: 1rem; }
+          #sec1-main-cont .title-cont .title-box .mini-box .title-link a .hover-ticket {
+            position: absolute;
+            z-index: 0;
+            height: 6rem;
+            width: 40rem;
+            left: -50rem;
+            top: 0;
+            transition: 0.7s;
+            border-radius: 0.5rem; }
+          #sec1-main-cont .title-cont .title-box .mini-box .title-link a .hover1 {
+            background: linear-gradient(right, #1cd8d2, #93edc7);
+            background: -moz-linear-gradient(right, #1cd8d2, #93edc7);
+            background: -webkit-linear-gradient(right, #1cd8d2, #93edc7); }
+          #sec1-main-cont .title-cont .title-box .mini-box .title-link a .hover2 {
+            background: linear-gradient(right, #ff512f, #dd2476);
+            background: -moz-linear-gradient(right, #ff512f, #dd2476);
+            background: -webkit-linear-gradient(right, #ff512f, #dd2476); }
+          #sec1-main-cont .title-cont .title-box .mini-box .title-link a:hover .hover-ticket {
+            left: -10rem; }
 
 #sec2-about {
   width: 100%;
-  background-color: #fff;
-  min-height: 20rem; }
+  background-color: #161616;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  #sec2-about #header-title {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    margin: 7rem 0;
+    padding: 1rem 0;
+    border-top: 0.1rem solid #9d8200;
+    border-bottom: 0.1rem solid #9d8200;
+    letter-spacing: 1rem;
+    transition: 0.4s; }
+  #sec2-about #header-title.bigborder {
+    padding: 1.3rem 0;
+    border-top: 0.1rem solid #f9d423 !important;
+    border-bottom: 0.1rem solid #f9d423;
+    margin: 6.7rem 0; }
+  #sec2-about .header-desc {
+    font-family: "Hind", sans-serif;
+    width: 100rem;
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #696969; }
+  #sec2-about .category-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 7rem; }
+    #sec2-about .category-box .category-item {
+      box-sizing: border-box;
+      border: 1px solid #2e2e2e;
+      width: 30rem;
+      min-height: 20rem;
+      margin: 0 2rem;
+      transition: 0.4s;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      #sec2-about .category-box .category-item:hover {
+        border: 1px solid #696969;
+        -webkit-box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.75);
+        cursor: pointer; }
+      #sec2-about .category-box .category-item .cat-icon {
+        color: #f9d423;
+        font-size: 5.2rem;
+        margin: 1.6rem 0; }
+      #sec2-about .category-box .category-item .cat-title {
+        color: #f9d423;
+        text-transform: uppercase;
+        font-family: "Nunito", sans-serif;
+        font-size: 2.4rem; }
+      #sec2-about .category-box .category-item .cat-desc {
+        font-family: "Hind", sans-serif;
+        color: #696969;
+        font-size: 1.6rem;
+        margin: 1.2rem 2rem;
+        text-align: center; }
+      #sec2-about .category-box .category-item .cat-button {
+        width: 14rem;
+        height: 4rem;
+        box-sizing: border-box;
+        margin-bottom: 1.8rem; }
+      #sec2-about .category-box .category-item .cat-button > a {
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        width: 14rem;
+        height: 4rem;
+        display: flex;
+        border: 1px solid #2e2e2e;
+        background-color: #161616;
+        box-sizing: border-box;
+        transition: 0.7s; }
+        #sec2-about .category-box .category-item .cat-button > a:hover {
+          background-color: rgba(22, 22, 22, 0); }
+      #sec2-about .category-box .category-item .cat-button > a > p {
+        margin: auto;
+        padding: 0;
+        text-transform: uppercase;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem; }
 
 #sec3 {
   width: 100%; }
