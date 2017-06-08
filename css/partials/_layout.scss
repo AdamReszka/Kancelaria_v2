@@ -64,7 +64,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
       @include dirrow;
       .fa-envira{
         font-size: 2rem;
-        color: #f9d423;
+        color: $yellow;
         transition: 0.3s;
         margin-right: 0.5rem;
         transition: 0.7s;
@@ -177,7 +177,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
             z-index: 50;
             .fa-tag{
               font-size: 3.8rem;
-              color: #f9d423;
+              color: $yellow;
               position: relative;
               z-index: 50;
             }
@@ -223,36 +223,28 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
     }
   }
 }
+.header-desc{
+  font-family: $hind;
+  width: 100rem;
+  margin-bottom: 7rem;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #696969;
+}
 #sec2-about{
   width: 100%;
   background-color: rgba(22, 22, 22, 1);
   min-height: 20rem;
   @include dircol;
   #header-title{
-    font-family: $nuni;
-    text-transform: uppercase;
-    font-size: 4.2rem;
-    margin: 7rem 0;
-    padding: 1rem 0;
-    border-top: 0.1rem solid #9d8200;
-    border-bottom: 0.1rem solid #9d8200;
-    letter-spacing: 1rem;
-    transition: 0.4s;
+    @include pulseHeader;
   }
   #header-title.bigborder{
     padding: 1.3rem 0;
-    border-top: 0.1rem solid #f9d423 !important;
-    border-bottom: 0.1rem solid #f9d423;
+    border-top: 0.1rem solid $yellow !important;
+    border-bottom: 0.1rem solid $yellow;
     margin: 6.7rem 0;
-  }
-  .header-desc{
-    font-family: $hind;
-    width: 100rem;
-    margin-bottom: 7rem;
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: center;
-    color: #696969;
   }
   .category-box{
     @include dirrow;
@@ -273,12 +265,12 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
         cursor: pointer;
       }
       .cat-icon{
-        color: #f9d423;
+        color: $yellow;
         font-size: 5.2rem;
         margin: 1.6rem 0;
       }
       .cat-title{
-        color: #f9d423;
+        color: $yellow;
         text-transform: uppercase;
         font-family: $nuni;
         font-size: 2.4rem;
@@ -324,14 +316,200 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
 
 #sec3-description{
   width: 100%;
-  min-height: 74rem;
+  min-height: 76rem;
   background-color: #000;
   background-image: url('../images/warsaw-bg3.png');
   background-size: cover;
-}
+  @include dirrow;
+  justify-content: center;
+  .frames-box{
+    position: relative;
+    width: 140rem;
+    height: 54rem;
+    .left-frame{
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      top: 4rem;
+      box-sizing: border-box;
+      height: 46rem;
+      width: 92rem;
+      border: 0.1rem solid #bbbbbb;
+      .inner-left-frame{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include dirrow;
+        #slide-right-arrow{
+          position: relative;
+          margin-left: 1.5rem;
+          transition: 0.2s;
+          display: none;
+          .fa-angle-right{
+            font-size: 6rem;
+            display: block;
+            animation: arrowpulse 3s infinite;
+            -webkit-animation: arrowpulse 3s infinite;
+            -moz-animation: arrowpulse 3s infinite;
+          }
+          &:hover .fa-angle-right{
+            cursor: pointer;
+            color: $yellow !important;
+          }
+        }
+        .left-frame-content{
+          position: absolute;
+          left: 5rem;
+          height: 46rem;
+          overflow: hidden;
+          width: 81rem;
+          transition: 1s;
+          .lfc-case{
+            height: 46rem;
+            overflow: hidden;
+            width: 81rem;
+            @include dircol;
+            p.lfc-title{
+              @include pulseHeader;
+            }
+            p.lfc-desc{
+              font-family: $hind;
+              color: #cccccc;
+              font-size: 2.2rem;
+              margin: 1.2rem 2rem;
+              text-align: center;
+              font-weight: 200;
+            }
+          }
 
+        }
+
+      }
+    }
+    .right-frame{
+      position: absolute;
+      box-sizing: border-box;
+      right: 0;
+      width: 54rem;
+      height: 54rem;
+      border: 0.7rem solid $yellow;
+      transition: 1s;
+      .inner-right-frame{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        @include dirrow;
+        #slide-left-arrow{
+          position: relative;
+          margin-left: 1.2rem;
+          transition: 0.2s;
+          .fa-angle-left{
+            font-size: 6rem;
+            display: block;
+            animation: arrowpulse 3s infinite;
+            -webkit-animation: arrowpulse 3s infinite;
+            -moz-animation: arrowpulse 3s infinite;
+          }
+          &:hover .fa-angle-left{
+            cursor: pointer;
+            color: $yellow !important;
+          }
+        }
+
+        .hidden-frame{
+          position: absolute;
+          box-sizing: border-box;
+          right: 47.2rem;
+          height: 46rem;
+          width: 92rem;
+          // border: 0.1rem solid #bbbbbb;
+          padding: 0 5rem;
+          .hf-desc{
+            font-family: $hind;
+            color: #cccccc;
+            font-size: 2.2rem;
+            margin: 5rem 0 0 5rem;
+            text-align: left;
+            font-weight: 200;
+          }
+        }
+        .right-frame-content{
+          position: absolute;
+          height: 100%;
+          width: 42.4rem;
+          right: 5rem;
+          display: flex;
+          flex-direction: column;
+          .rfc-title{
+            font-family: $nuni;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8rem;
+            margin: 3rem 0 0 3rem;
+          }
+          .rfc-desc{
+            font-family: $hind;
+            color: #696969;
+            font-size: 1.6rem;
+            margin: 2rem 0 0 3rem;
+          }
+          .rfc-item{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin: 2rem 0 0 3rem;
+            .rfc-icon{
+              color: $yellow;
+              font-size: 3.8rem;
+              display: block;
+            }
+            .rfc-icon-desc{
+              @include dircol;
+              .rid-title{
+                color: $yellow;
+                font-family: $nuni;
+                font-size: 2.4rem;
+                margin: 0 0 0 0;
+              }
+              .rid-desc{
+                font-family: $hind;
+                color: #696969;
+                font-size: 1.6rem;
+                margin: 1rem 0 0 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes arrowpulse{
+  0% {color: rgba(255, 255, 255, 1);}
+  75% {color: rgba(255, 255, 255, 1);}
+  87% {color: rgba(255, 255, 255, 0);}
+  100% {color: rgba(255, 255, 255, 1);}
+  }
 #sec4-team{
   width: 100%;
   min-height: 50rem;
   background-color: rgba(22, 22, 22, 1);
+  @include dircol;
+  .team-title{
+    @include pulseHeader;
+  }
+  .person-box{
+    @include dirrow;
+    margin-bottom: 7rem;
+    .person-item{
+      @include dircol;
+      width: 30rem;
+      min-height: 20rem;
+      margin: 0 2rem;
+      transition: 0.4s;
+      background-color: green;
+
+    }
+  }
 }
