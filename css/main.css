@@ -365,7 +365,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover {
       box-sizing: border-box;
       height: 46rem;
       width: 92rem;
-      border: 0.1rem solid #bbbbbb; }
+      border: 0.1rem solid #666666; }
       #sec3-description .frames-box .left-frame .inner-left-frame {
         position: relative;
         width: 100%;
@@ -424,7 +424,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover {
       right: 0;
       width: 54rem;
       height: 54rem;
-      border: 0.7rem solid #f9d423;
+      border: 0.5rem solid #f9d423;
       transition: 1s; }
       #sec3-description .frames-box .right-frame .inner-right-frame {
         position: relative;
