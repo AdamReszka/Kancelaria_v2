@@ -349,6 +349,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover {
   background-color: #000;
   background-image: url("../images/warsaw-bg3.png");
   background-size: cover;
+  background-position: bottom;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -616,6 +617,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover {
   width: 100%;
   background-image: url("../images/close-up-grass-bw.png");
   background-size: cover;
+  background-position: bottom;
   height: 46rem; }
   #sec5-numbers .numbers-cover {
     width: 100%;
