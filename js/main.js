@@ -2,7 +2,7 @@ $(document).ready(initAll);
 
 function initAll(){
 
-  startParallax();
+
   // growBorder();
   adjustNav1();
   adjustNav2();
@@ -11,6 +11,7 @@ function initAll(){
   closeFrames();
   setNumbers();
   setHeight();
+  startParallax();
 }
 
 function startParallax(){
