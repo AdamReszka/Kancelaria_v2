@@ -74,7 +74,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
         padding: 0;
         margin: auto;
         font-family: $nuni;
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         text-transform: uppercase;
         letter-spacing: 0.8rem;
       }
@@ -166,7 +166,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
         }
         .title-link{
           height: 6rem;
-          width: 30rem;
+          width: 32rem;
           margin: 0 0 2.4rem 0.6rem;
           a{
             @include dirrow;
@@ -186,7 +186,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
               z-index: 50;
               font-family: $nuni;
               text-transform: uppercase;
-              font-size: 2.2rem;
+              font-size: 2.4rem;
               letter-spacing: 0.3rem;
               margin-left: 1rem;
             }
@@ -194,8 +194,8 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
               position: absolute;
               z-index: 0;
               height: 6rem;
-              width: 40rem;
-              left: -50rem;
+              width: 42rem;
+              left: -52rem;
               top: 0;
               transition: 0.7s;
               border-radius: 0.5rem;
@@ -371,6 +371,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
             @include dircol;
             p.lfc-title{
               @include pulseHeader;
+              margin: 10rem 0 6rem 0;
             }
             p.lfc-desc{
               font-family: $hind;
@@ -443,7 +444,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
           flex-direction: column;
           .rfc-title{
             font-family: $nuni;
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             text-transform: uppercase;
             letter-spacing: 0.8rem;
             margin: 3rem 0 0 3rem;
@@ -493,7 +494,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
   }
 #sec4-team{
   width: 100%;
-  min-height: 50rem;
+  min-height: 70rem;
   background-color: rgba(22, 22, 22, 1);
   @include dircol;
   .team-title{
@@ -505,11 +506,228 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
     .person-item{
       @include dircol;
       width: 30rem;
-      min-height: 20rem;
+      min-height: 40rem;
       margin: 0 2rem;
       transition: 0.4s;
-      background-color: green;
-
+      .person-photo{
+        @include zero;
+        background-color: green;
+        width: 30rem;
+        height: 40rem;
+      }
+      .person-name{
+        font-family: $nuni;
+        font-weight: 200;
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: left;
+        margin: 3.2rem 0 1rem 0;
+        span{
+          text-transform: uppercase;
+          color: $yellow;
+        }
+      }
+      .person-desc{
+        font-family: $nuni;
+        font-weight: 200;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: justify;
+        margin-bottom: 3.2rem;
+      }
+      .person-button{
+        width: 14rem;
+        height: 4rem;
+        box-sizing: border-box;
+        margin-bottom: 1.8rem;
+      }
+      .person-button > a{
+        @include clearA;
+        width: 14rem;
+        height: 4rem;
+        display: flex;
+        border: 1px solid #2e2e2e;
+        background-color: rgba(22, 22, 22, 1);
+        box-sizing: border-box;
+        transition: 0.7s;
+        &:hover{
+          background-color: rgba(22, 22, 22, 0);
+        }
+      }
+      .person-button > a > p{
+        margin: auto;
+        padding: 0;
+        text-transform: uppercase;
+        font-family: $nuni;
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+      }
     }
+  }
+}
+#sec5-numbers{
+  width: 100%;
+  background-image: url('../images/close-up-grass-bw.png');
+  background-size: cover;
+  height: 46rem;
+  .numbers-cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    @include dircol;
+    .numbers-title{
+      @include pulseHeader;
+    }
+    .numbers-cont{
+      @include dirrow;
+      margin-top: 11rem;
+      .numbers-item{
+        @include dirrow;
+        margin: 0 1.5rem;
+        i{
+          color: $yellow;
+          font-size: 5.6rem;
+          margin: 0.4rem 1rem 1rem 1rem;
+        }
+        .numbers-item-desc{
+          @include dircol;
+          align-items: flex-start;
+          margin: 0.4rem 0 1rem 0;
+          p.item-counter{
+            font-family: $nuni;
+            font-size: 3.6rem;
+          }
+          .ic-description{
+            font-family: $hind;
+            font-size: 2rem;
+            margin: 0.4rem 0;
+          }
+        }
+      }
+  }
+
+  }
+}
+#sec6-socials{
+  width: 100%;
+  height: 16rem;
+  background-color: $yellow;
+  display: flex;
+  .socials-box{
+    margin: auto;
+    @include dirrow;
+    .socials-link{
+      position: relative;
+      display: block;
+      margin: 0 24rem 0 0;
+      padding: 0;
+      transition: 0.2s;
+      i{
+        color: rgba(22, 22, 22, 1);
+        font-size: 6rem;
+        transition: 0.2s;
+      }
+      .fa-facebook-square{
+        &:hover{
+          color: #3b5998;
+        }
+      }
+      .fa-twitter-square{
+        &:hover{
+          color: #4099ff;
+        }
+      }
+      .fa-linkedin-square{
+        &:hover{
+          color: #007bb6;
+        }
+      }
+      .fa-youtube-square{
+        &:hover{
+          color: #b31217;
+        }
+      }
+    }
+
+    .socials-link:last-child{
+      margin: 0;
+    }
+  }
+}
+#sec7-footer{
+  width: 100%;
+  min-height: 60rem;
+  background-color: rgba(22, 22, 22, 1);
+  @include dircol;
+  .contact-title{
+    @include pulseHeader;
+  }
+  .footer-box{
+    width: 140rem;
+    height: 46rem;
+    // background-color: grey;
+    display: flex;
+    flex-direction: row;
+    .footer-item{
+      margin-right: 5rem;
+      .title-box{
+        border-bottom: 0.1rem solid #9d8200;
+        margin-bottom: 3rem;
+      }
+      .fi-title{
+        font-family: $nuni;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .fi-subtitle{
+        font-size: 2rem;
+        font-family: $hind;
+        color: #696969;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        margin: 9.8rem 0 1rem 0;
+      }
+      .fi-content{
+        font-size: 2rem;
+        font-family: $hind;
+        color: #696969;
+        margin-bottom: 3rem;
+        .additional-info{
+          width: 42rem;
+          line-height: 3rem;
+        }
+        p{
+          margin: 0 0 1rem 0;
+          a{
+            color: #696969;
+            &:hover{
+              color: #fff;
+            }
+          }
+        }
+      }
+      .myMap{
+        width: 44.9rem;
+        height: 35rem;
+        // margin-top: 9.8rem;
+      }
+    }
+    .footer-item:last-child{
+      margin: 0;
+    }
+  }
+}
+#sec8-last-footer{
+  height: $nav;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  position: relative;
+  .copyright{
+    margin: auto 0 auto 9rem;
+    color: #696969;
+    font-family: $nuni;
+    font-size: 1.4rem;
   }
 }

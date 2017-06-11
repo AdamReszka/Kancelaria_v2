@@ -6,8 +6,10 @@ function initAll(){
   growBorder();
   adjustNav1();
   adjustNav2();
+  adjustNav3();
   openFrames();
   closeFrames();
+  setNumbers();
 }
 
 function setHeight(){
@@ -65,6 +67,21 @@ function adjustNav2() {
   	});
   	}
 
+function adjustNav3() {
+    var NavY3 = $('#sec4-team').offset().top;
+    var stickyNav = function(){
+    var scrollY = $(window).scrollTop();
+    if (scrollY >= NavY3) {
+      $('nav').addClass('nav-darken');
+      $('#main-ul a').addClass('nav-darken');
+    }
+      		};
+    stickyNav();
+    $(window).scroll(function() {
+    	stickyNav();
+    });
+    }
+
 function openFrames(){
   $('#slide-left-arrow').click(function(){
     $(this).closest('.right-frame').css('width','135rem');
@@ -79,5 +96,17 @@ function closeFrames(){
     $(this).closest('.frames-box').find('#slide-left-arrow').show(1000);
     $(this).closest('.frames-box').find('.left-frame-content').css('width','81rem');
     $(this).hide(1000);
+  });
+}
+function setNumbers() {
+
+  var eventFired = false;
+  objectPositionTop = $('#numberTag').offset().top - $(window).height();
+  $(window).on('scroll', function() {
+    var currentPosition = $(document).scrollTop();
+    if (currentPosition > objectPositionTop && eventFired === false) {
+      eventFired = true;
+      $('.timer').countTo();
+    }
   });
 }
