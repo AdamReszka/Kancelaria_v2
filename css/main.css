@@ -515,7 +515,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover {
   100% {
     color: white; } }
 #photo1 {
-  background-image: url("../images/photo1.jpeg");
+  background-image: url("../images/photo12.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -525,7 +525,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover {
   background-position: center; }
 
 #photo3 {
-  background-image: url("../images/photo3.jpeg");
+  background-image: url("../images/photo31.jpg");
   background-size: cover;
   background-position: center; }
 
