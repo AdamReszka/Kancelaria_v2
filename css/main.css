@@ -513,6 +513,26 @@ nav#main-nav ul#main-ul li a.nav-darken:hover {
     color: rgba(255, 255, 255, 0); }
   100% {
     color: white; } }
+#photo1 {
+  background-image: url("../images/photo1.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+#photo2 {
+  background-image: url("../images/photo2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#photo3 {
+  background-image: url("../images/photo3.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+#photo4 {
+  background-image: url("../images/photo4.jpeg");
+  background-size: cover;
+  background-position: center; }
+
 #sec4-team {
   width: 100%;
   min-height: 70rem;

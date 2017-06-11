@@ -492,6 +492,26 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
   87% {color: rgba(255, 255, 255, 0);}
   100% {color: rgba(255, 255, 255, 1);}
   }
+  #photo1{
+    background-image: url('../images/photo1.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  #photo2{
+    background-image: url('../images/photo2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  #photo3{
+    background-image: url('../images/photo3.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  #photo4{
+    background-image: url('../images/photo4.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
 #sec4-team{
   width: 100%;
   min-height: 70rem;
@@ -515,6 +535,7 @@ nav#main-nav ul#main-ul li a.nav-darken:hover{
         width: 30rem;
         height: 40rem;
       }
+
       .person-name{
         font-family: $nuni;
         font-weight: 200;

@@ -1,34 +1,37 @@
 $(document).ready(initAll);
 
 function initAll(){
-  setHeight();
+
   startParallax();
-  growBorder();
+  // growBorder();
   adjustNav1();
   adjustNav2();
   adjustNav3();
   openFrames();
   closeFrames();
   setNumbers();
-}
-
-function setHeight(){
-  $('#sec1-main-cont').height($(window).innerHeight());
+  setHeight();
 }
 
 function startParallax(){
   $(window).stellar();
 }
 
+function setHeight(){
+  var windowHeight = $(window).innerHeight() + 17;
+  $('#sec1-main-cont').height(windowHeight);
+  console.log(windowHeight);
+}
+
+
+
 function growBorder(){
   $('.growing').hover(function(){
     console.log('jest nad');
     $(this).closest('#sec2-about').find('#header-title').addClass('bigborder');
-    $(this).closest('#sec3-description').find('.lfc-title').addClass('bigborder');
   });
   $('.growing').mouseleave(function(){
     $(this).closest('#sec2-about').find('#header-title').removeClass('bigborder');
-    $(this).closest('#sec3-description').find('.lfc-title').removeClass('bigborder');
   });
 }
 
