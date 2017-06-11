@@ -11,7 +11,7 @@ function initAll(){
   closeFrames();
   setNumbers();
   setHeight();
-  startParallax();
+  // startParallax();
 }
 
 function startParallax(){
